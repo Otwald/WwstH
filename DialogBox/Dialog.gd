@@ -1,7 +1,8 @@
 extends Control
 
 
-onready var spawns : Array = [$Spawn1.transform, $Spawn2.transform, $Spawn3.transform, $Spawn4.transform]
+onready var spawns : Array = [$Spawn1.transform, $Spawn2.transform, $Spawn3.transform, $Spawn4.transform];
+onready var text_box : RichTextLabel = $DialogBox/Text;
 
 func build_scene(bg : Texture, charas : Array) ->void:
 	set_bg(bg);
@@ -18,4 +19,11 @@ func set_bg(bg : Texture)->void:
 
 
 func say(text : String):
-	$DialogBox/Text.text = text;
+	# text_box.scroll_following= true;
+	print(text.length())
+	# text.
+	text_box.text = "";
+	print(text_box.rect_clip_content)
+	text_box.add_text(text);
+	print(text_box.rect_clip_content)
+	# print(text_box.get_content_height())

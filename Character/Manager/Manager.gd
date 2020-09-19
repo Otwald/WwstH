@@ -11,4 +11,4 @@ func _ready():
 
 func say(text : String , mood : String = ""):
 	# $DialogBox/Text.text = text;
-	text_box.text = text;
+	parent.say(text);	

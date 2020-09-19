@@ -78,6 +78,7 @@ bbcode_text = "This is a Placeholder
 Hello?"
 text = "This is a Placeholder
 Hello?"
+scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }

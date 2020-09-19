@@ -11,4 +11,6 @@ func _ready():
 func select_scene(scene : int):
 	var player_scene : PackedScene = load(scenes[scene]);
 	var scene_play : Control = player_scene.instance()
+	$MapRoot/Scene1.disabled = true;
 	self.add_child(scene_play)
+
