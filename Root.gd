@@ -1,7 +1,7 @@
 extends Node
 
 var scenes = ["","res://Scene1/Scene1.tscn", "res://Scene2/Scene2.tscn"]
-var figures : Dictionary = { "manager" : "res://Character/Manager/Manager.tscn"}
+var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn"}
 
 
 # Called when the node enters the scene tree for the first time.

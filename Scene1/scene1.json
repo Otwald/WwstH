@@ -1,5 +1,6 @@
 {
   "scene": "1",
+  "bg": "res://Asset/Scenes/scene1.png",
   "character": ["Manager", "Merax"],
   "content": {
     "1": {
@@ -29,6 +30,7 @@
     "5": {
       "is_line": true,
       "speaker": "Merax",
+      "mood": "",
       "body": " I apologise for making you wait for so long, I had some other urgent work to tend to."
     },
     "6": {
