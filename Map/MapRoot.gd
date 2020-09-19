@@ -1,17 +1,16 @@
 extends Control
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+signal startScene;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	$Scene1.connect("pressed", self, "start_scene_1");
+	$Scene2.connect("pressed", self, "start_scene_2");
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func start_scene_1() -> void:
+	emit_signal("startScene", 1);
+
+func start_scene_2()-> void:
+	emit_signal("startScene", 2);
