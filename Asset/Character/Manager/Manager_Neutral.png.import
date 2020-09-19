@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Manager_Succeed.png-0d725607bf3f112f7c9f0cc1ff2dc4a8.stex"
+path="res://.import/Manager_Neutral.png-dbb31dadea57754133586afca1757cad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Manager/Manager_Succeed.png"
-dest_files=[ "res://.import/Manager_Succeed.png-0d725607bf3f112f7c9f0cc1ff2dc4a8.stex" ]
+source_file="res://Asset/Character/Manager/Manager_Neutral.png"
+dest_files=[ "res://.import/Manager_Neutral.png-dbb31dadea57754133586afca1757cad.stex" ]
 
 [params]
 

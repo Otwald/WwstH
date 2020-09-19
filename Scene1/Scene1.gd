@@ -1,19 +1,28 @@
-extends Control
+extends "res://Scene.gd"
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var bg : String = "res://Asset/Scenes/scene1.png";
+var manager : Node2D;
+onready var root : Node = get_parent()
+onready var chars : Array = [root.figures["manager"]]
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var loaded_chars :Array  = build_scene(bg, chars);
+	manager = loaded_chars[0];
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	$Dialog.say(
+		"It was now time to get Mr.Big Bag Hotshot Merax on your side."
+		
+		# "This will likely be a suicide mission but you will definitely be doomed if the town was left defenceless without its protector."
+		
+		# "Merak surprisingly accepted your request to meet him."
+		
+		# "And so here you are sitting in actually his very cozily decorated office that is very different from how you imagined it to be like."
+		);
+	manager.say("You get paid for doing this?", "annoyed")
 
 # [E007] Nemesis Negotiation.
 
@@ -407,7 +416,7 @@ func _ready():
 
 #     Merax [Neutral]: Either way. Farewell and I wish you good day and luck on your quest.
 # }
-    
+	
 # “Are you sure you cannot delay your attack?”
 
 # MC: You know i’m in a very tough sp-
