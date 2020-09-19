@@ -1,0 +1,46 @@
+{
+  "scene": "1",
+  "character": ["Manager", "Merax"],
+  "content": {
+    "1": {
+      "is_line": true,
+      "speaker": "",
+      "mood": "",
+      "body": "It was now time to get Mr.Big Bag Hotshot Merax on your side."
+    },
+    "2": {
+      "is_line": true,
+      "speaker": "",
+      "mood": "",
+      "body": "This will likely be a suicide mission but you will definitely be doomed if the town was left defenceless without its protector."
+    },
+    "3": {
+      "is_line": true,
+      "speaker": "",
+      "mood": "",
+      "body": "Merak surprisingly accepted your request to meet him."
+    },
+    "4": {
+      "is_line": true,
+      "speaker": "",
+      "mood": "",
+      "body": "And so here you are sitting in actually his very cozily decorated office that is very different from how you imagined it to be like"
+    },
+    "5": {
+      "is_line": true,
+      "speaker": "Merax",
+      "body": " I apologise for making you wait for so long, I had some other urgent work to tend to."
+    },
+    "6": {
+      "is_line": false,
+      "body": "",
+      "choices": [
+        {
+          "body": "Was it a distraction for you to attack the town",
+          "count": 0,
+          "jump": 6
+        }
+      ]
+    }
+  }
+}

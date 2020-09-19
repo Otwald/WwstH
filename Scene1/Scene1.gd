@@ -3,9 +3,9 @@ extends "res://Scene.gd"
 
 var bg : String = "res://Asset/Scenes/scene1.png";
 var manager : Node2D;
-var content : Array = []
+var content : Dictionary;
 var progress :bool = false
-var count : int = 0;
+var count : int = 1;
 onready var root : Node = get_parent()
 onready var chars : Array = [root.figures["manager"]]
 
@@ -13,47 +13,24 @@ onready var chars : Array = [root.figures["manager"]]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var loaded_chars :Array  = build_scene(bg, chars);
+	var resp = build_scene(bg, chars, "scene1");
+	var loaded_chars :Array = resp[0];
+	content = resp[1].content;
 	manager = loaded_chars[0];
-	content = load_content();
 
 
 func _process(delta):
 	progress = Input.is_action_just_pressed("ui_accept");
 	
 	while progress:
-		$Dialog.say(content[count]);
+		var line = content[str(count)];
+		if line.is_line:
+			$Dialog.say(line.body);
 		count += 1;
 		progress = false
-		# $Dialog.say(
-		# 	"It was now time to get Mr.Big Bag Hotshot Merax on your side. \n"+
-		# 	"This will likely be a suicide mission but you will definitely be doomed if the town was left defenceless without its protector. \n"+
-		# 	"Merak surprisingly accepted your request to meet him. \n"+
-		# 	"And so here you are sitting in actually his very cozily decorated office that is very different from how you imagined it to be like. \n"
-		# );
 
-
-	# manager.say("You get paid for doing this?", "annoyed")
-
-func load_content():
-	return [
-		"It was now time to get Mr.Big Bag Hotshot Merax on your side.",
-		"This will likely be a suicide mission but you will definitely be doomed if the town was left defenceless without its protector.",
-		"Merak surprisingly accepted your request to meet him.",
-		"And so here you are sitting in actually his very cozily decorated office that is very different from how you imagined it to be like",
-	]
 
 # [E007] Nemesis Negotiation.
-
-# "It was now time to get Mr.Big Bag Hotshot Merax on your side."
-
-# "This will likely be a suicide mission but you will definitely be doomed if the town was left defenceless without its protector."
-
-# "Merak surprisingly accepted your request to meet him."
-
-# "And so here you are sitting in actually his very cozily decorated office that is very different from how you imagined it to be like."
-
-# Merax [neutral]: I apologise for making you wait for so long, I had some other urgent work to tend to.
 
 # (Choice 1)
 # "Was it a distraction for you to attack the town?" ( 0 )
