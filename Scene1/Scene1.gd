@@ -30,6 +30,11 @@ func _process(delta):
 		var line = content[str(count)];
 		if line.is_line:
 			$Dialog.say(line.body);
+			if line.has('jump'):
+				count = line.jump -1
+
+		else:
+			$Dialog.build_choice(line.choices)
 		count += 1;
 		progress = false
 
