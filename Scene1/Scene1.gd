@@ -4,10 +4,6 @@ extends "res://Scene.gd"
 var manager : Node2D;
 var merax : Node2D;
 
-var chars : Array;
-onready var root : Node = get_parent()
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +14,5 @@ func _ready():
 	merax = loaded_chars[1];
 	manager.visible = true;
 	merax.visible = true;
-	
-
-
-
+	character = {"Merax" : merax, "Manager" : manager}
+	play_scene()

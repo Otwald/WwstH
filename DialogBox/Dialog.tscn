@@ -92,6 +92,27 @@ texture = ExtResource( 2 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/DialogPointer"]
 anims/IDLE = SubResource( 2 )
 
+[node name="SpeakerBox" type="Control" parent="."]
+anchor_left = 0.163
+anchor_top = 0.641
+anchor_right = 0.163
+anchor_bottom = 0.641
+margin_left = 2.088
+margin_top = 13.4
+margin_right = 99.088
+margin_bottom = 35.4
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="SpeakerBox"]
+margin_right = 94.0
+margin_bottom = 29.0
+bbcode_enabled = true
+bbcode_text = "PlaceHolder"
+text = "PlaceHolder"
+
 [node name="Choice" type="Control" parent="."]
 anchor_left = 0.387
 anchor_top = 0.204

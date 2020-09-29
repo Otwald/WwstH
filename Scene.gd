@@ -4,6 +4,9 @@ class_name Scene
 var count : int = 1;
 var progress :bool = false
 var content : Dictionary;
+var character : Dictionary;
+
+onready var root : Node = get_parent()
 
 func _process(_delta):
 	progress = Input.is_action_just_pressed("ui_accept");
@@ -13,7 +16,7 @@ func _process(_delta):
 func play_scene():
 	var line = content[str(count)];
 	if line.is_line:
-		$Dialog.say(line.body);
+		on_say(line.body, line.speaker, line.mood);
 		if line.has('jump'):
 			count = line.jump -1
 	else:
@@ -21,6 +24,11 @@ func play_scene():
 	count += 1;
 	progress = false
 
+func on_say(body : String, speaker : String, mood : String) ->void:
+	$Dialog.set_speaker(speaker)
+	if speaker != "":
+		var chara = character[speaker]
+	$Dialog.say(body)
 
 func build_scene(scene)-> Array:
 	var scene_content : Dictionary = load_json(scene);
@@ -48,6 +56,7 @@ func load_json(scene)->Dictionary:
 	file.close()
 	return dict
 
-func on_jump(to_jump : int):
+#used to jump to a specific line in a scene dict
+func on_jump(to_jump : int)->void:
 	count = to_jump
 	play_scene()

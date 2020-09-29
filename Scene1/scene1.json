@@ -80,7 +80,7 @@
     },
     "10": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " You get paid for doing this?\n"
     },
@@ -104,7 +104,7 @@
     },
     "14": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I see\u2026\n"
     },
@@ -129,7 +129,7 @@
     },
     "18": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Cookies?\n"
     },
@@ -166,7 +166,7 @@
     },
     "24": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Are you serious?\n"
     },
@@ -185,13 +185,13 @@
     },
     "27": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \"Why would he prepare cookies for me?\"\n"
     },
     "28": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \"I'm his enemy. This does not make sense!\"\n"
     },
@@ -210,13 +210,13 @@
     },
     "31": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " They actually look pretty neat.\n"
     },
     "32": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " And its perfume seems very familiar, somehow.\n"
     },
@@ -228,7 +228,7 @@
     },
     "34": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I\u2019m not touching these. You could have poisoned them.\n"
     },
@@ -252,7 +252,7 @@
     },
     "38": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Fine, fine I get it\u2026 I\u2019ll take a bite.\n"
     },
@@ -268,7 +268,12 @@
       "mood": "Neutral",
       "body": " But, it is just a bite. I doubt that your stomach is that full.\n"
     },
-    "41": { "is_line": true, "speaker": "MC", "mood": "", "body": " But-\n" },
+    "41": {
+      "is_line": true,
+      "speaker": "Manager",
+      "mood": "",
+      "body": " But-\n"
+    },
     "42": {
       "is_line": true,
       "speaker": "Merax",
@@ -277,13 +282,13 @@
     },
     "43": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \"I think I better have a bite\u2026 It doesn't seem like he will let me get away without tasting the cookies\u2026\"\n"
     },
     "44": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Let me taste this smaller one\u2026\n"
     },
@@ -295,7 +300,7 @@
     },
     "46": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " *crunch crunch*\n"
     },
@@ -307,7 +312,7 @@
     },
     "48": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " AAAAAAAAAAAH!!!\n"
     },
@@ -319,7 +324,7 @@
     },
     "50": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " This cookie!\n"
     },
@@ -331,13 +336,13 @@
     },
     "52": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " It is so goood!!!\n"
     },
     "53": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " The texture! The amount of chocolate chips! The taste! So good.\n"
     },
@@ -349,25 +354,25 @@
     },
     "55": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Actually, now that I think about it well\u2026 It tastes like my favourite cookies.\n"
     },
     "56": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " They are not really on sale but every so often I usually find a red box outside of my place containing them.\n"
     },
     "57": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " And for festivities the boxes are even bigger!\n"
     },
     "58": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I never understood who gave them to me though. Neither the sender's name or address is usually written in it.\n"
     },
@@ -379,7 +384,7 @@
     },
     "60": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Wait, you were the one sending them?\n"
     },
@@ -397,7 +402,7 @@
     },
     "63": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " But why don't you ever put a card to say it was from you.\n"
     },
@@ -415,7 +420,7 @@
     },
     "66": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I said it earlier! Sorry!\n"
     },
@@ -439,7 +444,7 @@
     },
     "70": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " You remember the last joint battle right? Where Esceles kind of got blown away by you and your buddy?\n"
     },
@@ -457,7 +462,7 @@
     },
     "73": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Are you okay buddy?\n"
     },
@@ -469,7 +474,7 @@
     },
     "75": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " That event got stuck in Astraea\u2019s mind. She is now thinking of quitting her magical girl job!\n"
     },
@@ -481,7 +486,7 @@
     },
     "77": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " What!? The little girl is traumatised. She is so shocked it feels like she lost herself.\n"
     },
@@ -500,7 +505,7 @@
     },
     "80": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " If you had not been such a brute this would have never happened!\n"
     },
@@ -516,7 +521,12 @@
       "mood": "Annoyed",
       "body": " Especially when the only thing I did was my job. Is it wrong to earn my living while doing my occupation?\n"
     },
-    "83": { "is_line": true, "speaker": "MC", "mood": "", "body": " But-\n" },
+    "83": {
+      "is_line": true,
+      "speaker": "Manager",
+      "mood": "",
+      "body": " But-\n"
+    },
     "84": {
       "is_line": true,
       "speaker": "Merax",
@@ -531,7 +541,7 @@
     },
     "86": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " But this is how it has always been.\n"
     },
@@ -555,7 +565,7 @@
     },
     "90": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \u201cI have no comeback! Dammit!\u201d\n"
     },
@@ -585,13 +595,13 @@
     },
     "95": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Well, you still haven't completely defeated Astraea and conquered the town.\n"
     },
     "96": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " And since she will turn the leaf over, it\u2019s not like you will technically be ever able to defeat.\n"
     },
@@ -622,7 +632,7 @@
     },
     "101": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I don\u2019t think seizing a defenceless town would really help the members of your league to take you more seriously.\n"
     },
@@ -634,13 +644,13 @@
     },
     "103": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Just imagine it. People no longer bugging you around and also what about your parents?\n"
     },
     "104": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I bet they would be so proud of their son!\n"
     },
@@ -652,7 +662,7 @@
     },
     "106": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " See! So many reasons to help me.\n"
     },
@@ -664,25 +674,25 @@
     },
     "108": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Well, you said that you usually send me cookies for celebrations and other times.\n"
     },
     "109": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I could share them with Astraea who will likely also share with his mother and her best friend.\n"
     },
     "110": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Now if she were to leave the city,it would likely be conquered by you which will very likely to cause me to fade away.\n"
     },
     "111": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " And thus you would lose me and also the people Astraea would have shared with. You will have no more people to send your excess cookies too.\n"
     },
@@ -706,7 +716,7 @@
     },
     "115": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " But what if they are not cookies enthusiasts like me and actually hate it.\n"
     },
@@ -736,7 +746,7 @@
     },
     "120": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " You really are despicable.\n"
     },
@@ -754,7 +764,7 @@
     },
     "123": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " What do you want more?\n"
     },
@@ -766,7 +776,7 @@
     },
     "125": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " If it is about trying to conquer Anutta then it is a big no.\n"
     },
@@ -784,7 +794,7 @@
     },
     "128": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " You dislike grocery shopping?\n"
     },
@@ -814,7 +824,7 @@
     },
     "133": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Wow, that sounds bad. Have you tried shopping online and having them deliver it at your place?\n"
     },
@@ -851,7 +861,7 @@
     },
     "139": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \u201cIf it scares the delivery persons, maybe if you make it less intimidating it will be better?\u201d\n"
     },
@@ -863,7 +873,7 @@
     },
     "141": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " What if you just changed jobs then? You seem pretty annoyed by your league.\n"
     },
@@ -883,7 +893,7 @@
       "is_line": true,
       "speaker": "Merax",
       "mood": "Neutral",
-      "body": " I tried many other different occupations such as a postman, a news host on the television and even a waiter at McDonut.\n"
+      "body": " I tried many other different occupations such as a postman, a news host on the television and even a waiter at ManagerDonut.\n"
     },
     "145": {
       "is_line": true,
@@ -893,7 +903,7 @@
     },
     "146": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " This is really sad.\n"
     },
@@ -911,7 +921,7 @@
     },
     "149": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Whaaaat!\n"
     },
@@ -929,13 +939,13 @@
     },
     "152": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I\u2019m sorry I guess.\n"
     },
     "153": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " It would be your official shopping outfit, where most people would know that you are only coming to town to do your non-evil business.\n"
     },
@@ -953,7 +963,7 @@
     },
     "156": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " But it is just an outfit?\n"
     },
@@ -971,7 +981,7 @@
     },
     "159": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \u2026\n"
     },
@@ -983,7 +993,7 @@
     },
     "161": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " So\u2026 uh\u2026 Can I count on your support?\n"
     },
@@ -995,7 +1005,7 @@
     },
     "163": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " But why not right now?\n"
     },
@@ -1007,7 +1017,7 @@
     },
     "165": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Why don\u2019t you simply cancel the attack?\n"
     },
@@ -1017,7 +1027,12 @@
       "mood": "Neutral",
       "body": " If I do so, I would miss out on the quota of two attacks minimum per week.\n"
     },
-    "167": { "is_line": true, "speaker": "MC", "mood": "", "body": " But-\n" },
+    "167": {
+      "is_line": true,
+      "speaker": "Manager",
+      "mood": "",
+      "body": " But-\n"
+    },
     "168": {
       "is_line": true,
       "speaker": "Merax",
@@ -1057,7 +1072,7 @@
     },
     "174": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I-I think I\u2019m good with the classic ingredients\u2026\n"
     },
@@ -1075,7 +1090,7 @@
     },
     "177": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " You know i\u2019m in a very tough sp-\n"
     },
@@ -1085,7 +1100,12 @@
       "mood": "Neutral",
       "body": " No.\n"
     },
-    "179": { "is_line": true, "speaker": "MC", "mood": "", "body": "  Bu-\n" },
+    "179": {
+      "is_line": true,
+      "speaker": "Manager",
+      "mood": "",
+      "body": "  Bu-\n"
+    },
     "180": {
       "is_line": true,
       "speaker": "Merax",
@@ -1094,13 +1114,13 @@
     },
     "181": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \u2026\n"
     },
     "182": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " Well I hope your next batch of cookies turn out wrong!\n"
     },
@@ -1112,7 +1132,7 @@
     },
     "184": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " I\u2019M NOT A RAT!\n"
     },
@@ -1136,13 +1156,13 @@
     },
     "188": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " It\u2019s cool\u2026 The whole town is my family.\n"
     },
     "189": {
       "is_line": true,
-      "speaker": "MC",
+      "speaker": "Manager",
       "mood": "",
       "body": " \u201cBut It sure does feel like I\u2019m the neglected middle kid.\u201d\n"
     },
