@@ -14,3 +14,6 @@ func select_scene(scene : int):
 	$MapRoot/Scene1.disabled = true;
 	self.add_child(scene_play)
 
+
+func on_save_scene_props():
+	pass

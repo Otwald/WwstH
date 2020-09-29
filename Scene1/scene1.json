@@ -38,6 +38,7 @@
       "body": "",
       "speaker": "",
       "mood": "",
+      "choice": 1,
       "choices": [
         {
           "body": "Was it a distraction for you to attack the town",

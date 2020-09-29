@@ -1,6 +1,26 @@
 extends Control
 class_name Scene
 
+var count : int = 1;
+var progress :bool = false
+var content : Dictionary;
+
+func _process(_delta):
+	progress = Input.is_action_just_pressed("ui_accept");
+	while progress:
+		play_scene()
+
+func play_scene():
+	var line = content[str(count)];
+	if line.is_line:
+		$Dialog.say(line.body);
+		if line.has('jump'):
+			count = line.jump -1
+	else:
+		$Dialog.build_choice(line)
+	count += 1;
+	progress = false
+
 
 func build_scene(scene)-> Array:
 	var scene_content : Dictionary = load_json(scene);
@@ -27,3 +47,7 @@ func load_json(scene)->Dictionary:
 	dict = parse_json(text)
 	file.close()
 	return dict
+
+func on_jump(to_jump : int):
+	count = to_jump
+	play_scene()

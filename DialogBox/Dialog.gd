@@ -6,6 +6,7 @@ onready var spawns : Array = [$Spawn1.transform, $Spawn2.transform, $Spawn3.tran
 onready var text_box : RichTextLabel = $DialogBox/Text;
 onready var choice_box : VBoxContainer = $Choice/Container;
 
+
 ##TODO remake charakter spawn to fit a json format
 func build_scene(bg : Texture, charas : Array) ->void:
 	set_bg(bg);
@@ -32,8 +33,17 @@ func say(text : String):
 	# print(text_box.get_content_height())
 
 
-func build_choice(choices : Array):
-	for choice in choices:
+func build_choice(line : Dictionary):
+	var counter = 1
+	for choice in line.choices:
 		var init_choice : Button = choice_scene.instance();
-		init_choice.on_build(choice);
+		init_choice.on_build(choice, counter, line.choice);
 		choice_box.add_child(init_choice);
+		counter += 1
+
+func on_choice_found(choice : Dictionary):
+	print(choice)
+	get_parent().on_jump(choice.jump)
+	var to_kill = choice_box.get_children()
+	for node in to_kill:
+		node.queue_free()
