@@ -21,15 +21,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Scene1" type="TextureButton" parent="."]
+[node name="SceneTut" type="TextureButton" parent="."]
 anchor_left = 0.125
 anchor_top = 0.247
 anchor_right = 0.125
 anchor_bottom = 0.247
-margin_left = 561.3
-margin_top = -56.9307
-margin_right = 724.3
-margin_bottom = 75.0693
+margin_left = 562.0
+margin_top = -57.2
+margin_right = 695.0
+margin_bottom = 45.8
 texture_normal = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 __meta__ = {

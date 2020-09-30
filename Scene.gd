@@ -14,6 +14,12 @@ func _process(_delta):
 		play_scene()
 
 func play_scene():
+	progress = false
+	if not content.has(str(count)):
+		on_say("Thanks for Playing this Prototype, and stay tuned for new updates", "", "")
+		root.find_node("TitleScreen").on_end()
+		queue_free()
+		return
 	var line = content[str(count)];
 	if line.is_line:
 		on_say(line.body, line.speaker, line.mood);
@@ -22,7 +28,6 @@ func play_scene():
 	else:
 		$Dialog.build_choice(line)
 	count += 1;
-	progress = false
 
 func on_say(body : String, speaker : String, mood : String) ->void:
 	$Dialog.set_speaker(speaker)
