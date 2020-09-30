@@ -1,4 +1,4 @@
-extends Node2D
+extends "res://Character/Character.gd"
 
 
 onready var parent : Control = get_parent();

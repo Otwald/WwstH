@@ -15,6 +15,7 @@ func build_scene(bg : Texture, charas : Array) ->void:
 	while i < charas.size():
 		charas[i].transform = spawns[i];
 		add_child(charas[i]);
+		move_child(charas[i], 1)
 		charas[i].visible = false;
 		i+=1;
 

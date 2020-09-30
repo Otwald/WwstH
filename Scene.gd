@@ -28,6 +28,7 @@ func on_say(body : String, speaker : String, mood : String) ->void:
 	$Dialog.set_speaker(speaker)
 	if speaker != "":
 		var chara = character[speaker]
+		chara.change_mood(mood)
 	$Dialog.say(body)
 
 func build_scene(scene)-> Array:

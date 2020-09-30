@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Asset/mapph.png" type="Texture" id=1]
+[ext_resource path="res://Asset/map.png" type="Texture" id=1]
 [ext_resource path="res://Asset/sceneph.png" type="Texture" id=2]
 [ext_resource path="res://Map/MapRoot.gd" type="Script" id=3]
 [ext_resource path="res://Asset/sceneph_hover.png" type="Texture" id=4]
+[ext_resource path="res://Asset/tutorial.png" type="Texture" id=5]
+[ext_resource path="res://Asset/tutorial_hover.png" type="Texture" id=6]
 
 [node name="MapRoot" type="Control"]
 margin_right = 1024.0
@@ -24,16 +26,18 @@ anchor_left = 0.125
 anchor_top = 0.247
 anchor_right = 0.125
 anchor_bottom = 0.247
-margin_top = -0.200012
-margin_right = 163.0
-margin_bottom = 131.8
-texture_normal = ExtResource( 2 )
-texture_hover = ExtResource( 4 )
+margin_left = 561.3
+margin_top = -56.9307
+margin_right = 724.3
+margin_bottom = 75.0693
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Scene2" type="TextureButton" parent="."]
+visible = false
 anchor_left = 0.624
 anchor_top = 0.365
 anchor_right = 0.624
