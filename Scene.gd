@@ -1,17 +1,29 @@
 extends Control
 class_name Scene
 
+signal OnLoaded
+
 var count : int = 1;
 var progress :bool = false
 var content : Dictionary;
 var character : Dictionary;
 
+
 onready var root : Node = get_parent()
+onready var sm : Node = root.get_node("SM");
+
+func _ready():
+	connect("OnLoaded", sm.get_node("Menu"), "on_signal");
+	sm.get_node("Idle").connect("OnNext", self, "on_idle_input");
 
 func _process(_delta):
-	progress = Input.is_action_just_pressed("ui_accept");
 	while progress:
 		play_scene()
+
+
+func on_idle_input():
+	progress = true;
+
 
 func play_scene():
 	progress = false
@@ -40,6 +52,7 @@ func build_scene(scene_content :Dictionary)-> Array:
 	var texture : Texture = load(scene_content.bg);
 	var loaded : Array = init_chars(scene_content.character);
 	$Dialog.build_scene(texture, loaded);
+	emit_signal("OnLoaded")
 	print("Loaded Scene");
 	return [loaded, scene_content];
 

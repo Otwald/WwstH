@@ -7,6 +7,7 @@ var astraea : Node2D;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	._ready();
 	var resp = build_scene(get_content());
 	var loaded_chars :Array = resp[0];
 	content = resp[1].content;

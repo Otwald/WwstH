@@ -1,6 +1,7 @@
 extends Node
 class_name State
 
+onready var sm : Node = get_parent();
 func enter(_machine):
 	pass
 

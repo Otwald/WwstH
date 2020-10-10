@@ -11,7 +11,9 @@ onready var parent :Node = get_parent()
 onready var root : Node = get_node("/root/Root")
 
 onready var states_map : Dictionary = {
-	'menu' : $Menu
+	'menu' : $Menu,
+	'idle' : $Idle,
+	'skip' : $Skip
 }
 
 func _ready():
