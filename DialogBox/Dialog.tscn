@@ -76,6 +76,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "This is a Placeholder
 Hello?"
+visible_characters = 0
 text = "This is a Placeholder
 Hello?"
 scroll_active = false

@@ -6,3 +6,6 @@ func update_process(_machine, _delta):
 	var next = Input.is_action_just_pressed("ui_accept");
 	if next:
 		emit_signal("OnNext");
+	var test = false
+	if test:
+		sm._change_state("menu");

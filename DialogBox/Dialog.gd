@@ -1,5 +1,7 @@
 extends Control
 
+export var speed = 40; 
+var flow : float = 0;
 
 onready var choice_scene : PackedScene = load("res://DialogBox/Choice/Choice.tscn")
 onready var spawns : Array = [$Spawn1.transform, $Spawn2.transform, $Spawn3.transform, $Spawn4.transform];
@@ -25,6 +27,7 @@ func set_bg(bg : Texture)->void:
 
 
 func say(text : String):
+	text_box.visible_characters = 0;
 	text_box.text = "";
 	text_box.add_text(text);
 
@@ -44,3 +47,11 @@ func on_choice_found(choice : Dictionary):
 	var to_kill = choice_box.get_children()
 	for node in to_kill:
 		node.queue_free()
+
+func _process(delta):
+	var characters :int = text_box.visible_characters;
+	if characters < text_box.get_total_character_count():
+		flow = flow + (delta * speed);
+	if flow > 1.0:
+		text_box.visible_characters = characters + int(flow);
+		flow = 0

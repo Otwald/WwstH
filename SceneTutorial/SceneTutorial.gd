@@ -28,109 +28,109 @@ func get_content()->Dictionary:
 			"is_line": true,
 			"speaker": "Astraea",
 			"mood": "Sad",
-			"body": " \u2026\n"
+			"body": "\u2026\n"
 		  },
 		  "2": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u2026\n"
+			"body": "\u2026\n"
 		  },
 		  "3": {
 			"is_line": true,
 			"speaker": "Astraea",
 			"mood": "",
-			"body": " \u2026\n"
+			"body": "\u2026\n"
 		  },
 		  "4": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " Come on now\u2026 we need to go now, Astraea.\n"
+			"body": "Come on now\u2026 we need to go now, Astraea.\n"
 		  },
 		  "5": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " Your mother might be looking for you.\n"
+			"body": "Your mother might be looking for you.\n"
 		  },
 		  "6": {
 			"is_line": true,
 			"speaker": "Astraea",
 			"mood": "",
-			"body": " \u2026\n"
+			"body": "\u2026\n"
 		  },
 		  "7": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cPoor girl\u2026 She\u2019s doing worse than I thought...\u201d\n"
+			"body": "Poor girl\u2026 She\u2019s doing worse than I thought..."
 		  },
 		  "8": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cJustine, or Astraea as she is more widely known is my protege.\u201d\n"
+			"body": "Justine, or Astraea as she is more widely known is my protege."
 		  },
 		  "9": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cShe is a very strong girl who accepted to bond with our city, Acrown and become its protector.\u201d\n"
+			"body": "She is a very strong girl who accepted to bond with our city, Acrown and become its protector."
 		  },
 		  "10": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cHowever a recent incident, that happened just a few hours ago, shook her to the core.\u201d\n"
+			"body": "However a recent incident, that happened just a few hours ago, shook her to the core."
 		  },
 		  "11": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cMerax, Astraea\u2019s nemesis, had teamed up with Hedon, a villain from another town to be able to conquer each other\u2019s towns.\u201d\n"
+			"body": "Merax, Astraea\u2019s nemesis, had teamed up with Hedon, a villain from another town to be able to conquer each other\u2019s towns."
 		  },
 		  "12": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cTo be able to fight them back, Astraea also sought help from Estelle, the other from the other town.\u201d\n"
+			"body": "To be able to fight them back, Astraea also sought help from Estelle, the other from the other town."
 		  },
 		  "13": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cHowever Merax was too strong. They were able to conquer Estelle\u2019s town and in an attempt to save Astraea\u2026 Estelle\u2026 she lost her life.\u201d\n"
+			"body": "However Merax was too strong. They were able to conquer Estelle\u2019s town and in an attempt to save Astraea\u2026 Estelle\u2026 she lost her life."
 		  },
 		  "14": {
 			"is_line": true,
 			"speaker": "Manager",
 			"mood": "",
-			"body": " \u201cI need to find a way to get her talk! But what can I say?\u201d\n"
+			"body": "I need to find a way to get her talk! But what can I say?"
 		  },
 		  "15": {
 			"is_line": true,
 			"speaker": "",
 			"mood": "",
-			"body": "\u201cYou will now begin negotiation. Try to win the opponent to your side by choosing the right options.\"\n"
+			"body": "You will now begin negotiation. Try to win the opponent to your side by choosing the right options.\n"
 		  },
 		  "16": {
 			"is_line": true,
 			"speaker": "",
 			"mood": "",
-			"body": "\"Everyone is different. Some may like logical answers while others require a more emotional approach.\"\n"
+			"body": "Everyone is different. Some may like logical answers while others require a more emotional approach.\n"
 		  },
 		  "17": {
 			"is_line": true,
 			"speaker": "",
 			"mood": "",
-			"body": "\"How will you know what would work best? Gather clues from what others said, the background and even the way others are talking to you.\"\n"
+			"body": "How will you know what would work best? Gather clues from what others said, the background and even the way others are talking to you.\n"
 		  },
 		  "18": {
 			"is_line": true,
 			"speaker": "",
 			"mood": "",
-			"body": "\"Good luck! Will you be the one to save the hero?\"\n"
+			"body": "Good luck! Will you be the one to save the hero?\n"
 		  }
 		}
 	  }
