@@ -2,10 +2,21 @@ extends "res://StateMachine/State.gd"
 
 signal OnNext
 
+var skip : bool;
+var next : bool;
+
+func enter(_machine):
+	skip = true;
+
 func update_process(_machine, _delta):
-	var next = Input.is_action_just_pressed("ui_accept");
-	if next:
+	var user_input = Input.is_action_just_pressed("ui_accept");
+	if user_input and not skip:
 		emit_signal("OnNext");
-	var test = false
-	if test:
-		sm._change_state("menu");
+		skip = true;
+		user_input = false
+	if user_input and skip:
+		sm._change_state("skip");
+
+func to_next():
+	if skip:
+		skip = false
