@@ -36,8 +36,7 @@ func on_say(body : String, speaker : String, mood : String) ->void:
 		chara.change_mood(mood)
 	$Dialog.say(body)
 
-func build_scene(scene)-> Array:
-	var scene_content : Dictionary = load_json(scene);
+func build_scene(scene_content :Dictionary)-> Array:
 	var texture : Texture = load(scene_content.bg);
 	var loaded : Array = init_chars(scene_content.character);
 	$Dialog.build_scene(texture, loaded);
@@ -52,15 +51,6 @@ func init_chars(charas : Array) -> Array:
 		var init_scene = ress_scene.instance();
 		out.push_back(init_scene)
 	return out;
-
-func load_json(scene)->Dictionary:
-	var dict : Dictionary;
-	var file = File.new()
-	file.open("res://"+scene+"/"+scene+".json", file.READ)
-	var text = file.get_as_text()
-	dict = parse_json(text)
-	file.close()
-	return dict
 
 #used to jump to a specific line in a scene dict
 func on_jump(to_jump : int)->void:

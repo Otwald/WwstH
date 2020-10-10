@@ -3,8 +3,6 @@ extends Button
 var choice_props : Dictionary
 var dialog : Control
 
-signal OnChoice
-
 func _ready():
 	connect("pressed", self, "on_pressed")
 	dialog = get_parent().get_parent().get_parent()
