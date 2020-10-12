@@ -3,7 +3,6 @@ extends "res://StateMachine/State.gd"
 signal OnNext
 
 var skip : bool;
-var next : bool;
 
 func enter(_machine):
 	skip = true;
