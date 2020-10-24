@@ -44,6 +44,11 @@ func say(text : String):
 	text_box.add_text(text);
 
 func set_speaker(content : String)->void:
+	#TODO check if no character is set if the default should be empty or a narrator
+	if content:
+		$SpeakerBox.visible = true;
+	else:
+		$SpeakerBox.visible = false;
 	speaker_box.text = content;
 
 func build_choice(line : Dictionary):
