@@ -2,7 +2,7 @@ extends Node
 class_name StateMaschine
 
 
-const DEBUG = true
+const DEBUG = false
 
 var states_stack = []
 var current_state = null

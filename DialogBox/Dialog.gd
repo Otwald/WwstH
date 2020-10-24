@@ -43,7 +43,8 @@ func say(text : String):
 	text_box.visible_characters = 0;
 	speed = org_speed;
 	text_box.text = "";
-	text_box.add_text(text);
+	# text_box.add_text(text);
+	text_box.bbcode_text = text;
 
 func set_speaker(content : String)->void:
 	#TODO check if no character is set if the default should be empty or a narrator

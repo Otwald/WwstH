@@ -19,5 +19,6 @@ func on_save_scene_props(choice : Dictionary):
 	if not save_log.has(choice.scene):
 		save_log[choice.scene] = { choice.character : choice[choice.character] } 
 	else:
-		save_log[choice.scene][choice.character] = save_log[choice.character] + choice[choice[choice.character]]
+		save_log[choice.scene][choice.character] = save_log[choice.scene][choice.character] + choice[choice.character]
 	save_log[choice.scene][choice.choice] = choice.own_numb
+	print(save_log);

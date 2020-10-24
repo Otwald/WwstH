@@ -251,7 +251,7 @@ func get_content()->Dictionary:
 		  "31": {
 			"is_line": true,
 			"speaker": "Manager",
-			"mood": "failed",
+			"mood": "sad",
 			"body": "'Better not get on his bad side…'"
 		  },
 		  "32": {
@@ -369,7 +369,7 @@ func get_content()->Dictionary:
 		  "50": {
 			"is_line": true,
 			"speaker": "Manager",
-			"mood": "Sigh",
+			"mood": "unique",
 			"body": "*crunch crunch*"
 		  },
 		  "51": {
@@ -478,13 +478,22 @@ func get_content()->Dictionary:
 			"is_line": true,
 			"speaker": "Merax",
 			"mood": "Neutral",
-			"body": " I am certain that you would simply shrug at it and be suspicious while probably discarding it to the trash, thinking it is laced with some toxic substances.\n"
+			"body": " I am certain that you would simply shrug at it and be suspicious while probably discarding it to the trash, thinking it is laced with some toxic substances.\n",
 		  },
 		  "69": {
 			"is_line": true,
 			"speaker": "Merax",
 			"mood": "Smug",
-			"body": " Like you did a few minutes earlier.\n"
+			"body": " Like you did a few minutes earlier.\n",
+			"condition" : {
+				"scene" : 1,
+				"props": {
+				"key" : 2,
+				"value": 2
+				},
+				"true" : 69,
+				"false" : 72
+			}
 		  },
 		  "70": {
 			"is_line": true,
@@ -496,7 +505,8 @@ func get_content()->Dictionary:
 			"is_line": true,
 			"speaker": "Merax",
 			"mood": "Smug",
-			"body": " It does not invalidate my previous assumption.\n"
+			"body": " It does not invalidate my previous assumption.\n",
+			"jump" : 72
 		  },
 		  "72": {
 			"is_line": true,
@@ -509,6 +519,12 @@ func get_content()->Dictionary:
 			"speaker": "Merax",
 			"mood": "Neutral",
 			"body": " It is not something I ever believed you would ask.\n"
+		  },
+		  "74":{
+			"is_line": true,
+			"speaker": "",
+			"mood": "",
+			"body": " "
 		  },
 		  "75": {
 			"is_line": true,

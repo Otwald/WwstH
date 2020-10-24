@@ -33,12 +33,20 @@ func play_scene():
 		queue_free()
 		return
 	var line = content[str(count)];
+	if line.has('condition'):
+		var condi : Dictionary = line.condition;
+		var check = root.save_log[condi.scene];
+		if check[condi.props.key] == condi.props.value:
+			count = condi["true"]
+		else:
+			count = condi["false"]
 	if line.is_line:
 		on_say(line.body, line.speaker, line.mood);
 		if line.has('jump'):
 			count = line.jump -1
 	else:
 		$Dialog.build_choice(line)
+	print(count)
 	count += 1;
 
 func on_say(body : String, speaker : String, mood : String) ->void:
