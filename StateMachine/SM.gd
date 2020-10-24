@@ -2,7 +2,7 @@ extends Node
 class_name StateMaschine
 
 
-const DEBUG = false
+const DEBUG = true
 
 var states_stack = []
 var current_state = null
@@ -14,12 +14,13 @@ onready var states_map : Dictionary = {
 	'menu' : $Menu,
 	'idle' : $Idle,
 	'skip' : $Skip,
-	'choice' :$Choice
+	'choice' :$Choice,
+	'mainmenu' : $MainMenu
 }
 
 func _ready():
-	current_state = $Menu
-	_change_state('menu')
+	current_state = $MainMenu
+	_change_state('mainmenu')
 	# parent.connect("got_hit", self, "take_damage")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

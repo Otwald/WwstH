@@ -9,6 +9,8 @@ func enter(_machine):
 
 func update_process(_machine, _delta):
 	var user_input = Input.is_action_just_pressed("ui_accept");
+	if Input.is_action_just_pressed("ui_cancel"):
+		sm._change_state("menu");
 	if user_input and not skip:
 		emit_signal("OnNext")
 		skip = true;

@@ -13,7 +13,7 @@ onready var root : Node = get_parent()
 onready var sm : Node = root.get_node("SM");
 
 func _ready():
-	connect("OnLoaded", sm.get_node("Menu"), "on_signal");
+	connect("OnLoaded", sm.get_node("MainMenu"), "on_signal");
 	sm.get_node("Idle").connect("OnNext", self, "on_idle_input");
 
 func _process(_delta):
