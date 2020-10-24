@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Asset/map.png" type="Texture" id=1]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.128
+anchor_top = 0.3
+anchor_right = 0.128
+anchor_bottom = 0.3
+margin_left = -71.072
+margin_top = 1.52588e-05
+margin_right = 68.928
+margin_bottom = 215.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resume" type="Button" parent="MContainer"]
+margin_right = 140.0
+margin_bottom = 20.0
+text = "Resume"
+
+[node name="Save" type="Button" parent="MContainer"]
+margin_top = 24.0
+margin_right = 140.0
+margin_bottom = 44.0
+text = "Save"
+
+[node name="Load" type="Button" parent="MContainer"]
+margin_top = 48.0
+margin_right = 140.0
+margin_bottom = 68.0
+text = "Load"
+
+[node name="ToTitle" type="Button" parent="MContainer"]
+margin_top = 72.0
+margin_right = 140.0
+margin_bottom = 92.0
+text = "To Title"
