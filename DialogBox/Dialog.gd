@@ -7,6 +7,7 @@ export var org_speed = 50;
 export var skip_modi = 6; 
 var speed = org_speed;
 var flow : float = 0;
+var _scene : int;
 
 onready var choice_scene : PackedScene = load("res://DialogBox/Choice/Choice.tscn")
 onready var spawns : Array = [$Spawn1.transform, $Spawn2.transform, $Spawn3.transform, $Spawn4.transform];
@@ -22,8 +23,9 @@ func _ready():
 	connect("ToNext",sm.get_node("Idle"), "to_next" );
 
 ##TODO remake charakter spawn to fit a json format
-func build_scene(bg : Texture, charas : Array) ->void:
+func build_scene(bg : Texture, charas : Array, scene : int) ->void:
 	set_bg(bg);
+	_scene = scene;
 	var i = 0
 	while i < charas.size():
 		charas[i].transform = spawns[i];
@@ -60,6 +62,8 @@ func build_choice(line : Dictionary):
 		counter += 1
 
 func on_choice_found(choice : Dictionary):
+	choice["scene"] = _scene;
+	root.on_save_scene_props(choice);
 	get_parent().on_jump(choice.jump)
 	var to_kill = choice_box.get_children()
 	for node in to_kill:

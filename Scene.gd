@@ -51,7 +51,7 @@ func on_say(body : String, speaker : String, mood : String) ->void:
 func build_scene(scene_content :Dictionary)-> Array:
 	var texture : Texture = load(scene_content.bg);
 	var loaded : Array = init_chars(scene_content.character);
-	$Dialog.build_scene(texture, loaded);
+	$Dialog.build_scene(texture, loaded, scene_content.scene);
 	emit_signal("OnLoaded")
 	print("Loaded Scene");
 	return [loaded, scene_content];

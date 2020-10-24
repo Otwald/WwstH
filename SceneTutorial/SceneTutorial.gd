@@ -19,7 +19,7 @@ func _ready():
 
 func get_content()->Dictionary:
 	return {
-		"scene": "1",
+		"scene": 0,
 		"bg": "res://Asset/Scenes/BG_GraveHill.png",
 		"character": ["Manager", "Astraea"],
 		"content": {

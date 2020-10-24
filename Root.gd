@@ -1,8 +1,8 @@
 extends Node
 
-var scenes = ["","res://SceneTutorial/SceneTutorial.tscn","res://Scene1/Scene1.tscn", "res://Scene2/Scene2.tscn"]
+var scenes : Array = ["","res://SceneTutorial/SceneTutorial.tscn","res://Scene1/Scene1.tscn", "res://Scene2/Scene2.tscn"]
 var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn", "Astraea" :"res://Character/Astraea/Astraea.tscn" }
-
+var save_log : Dictionary;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,5 +14,10 @@ func select_scene(scene : int):
 	self.add_child(scene_play)
 
 
-func on_save_scene_props():
-	pass
+#savelog = {scene_number : {"scene_character" : choice_points, "choice_number" : choocen_number }}
+func on_save_scene_props(choice : Dictionary):
+	if not save_log.has(choice.scene):
+		save_log[choice.scene] = { choice.character : choice[choice.character] } 
+	else:
+		save_log[choice.scene][choice.character] = save_log[choice.character] + choice[choice[choice.character]]
+	save_log[choice.scene][choice.choice] = choice.own_numb
