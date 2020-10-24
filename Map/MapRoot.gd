@@ -14,3 +14,4 @@ func start_scene_tut() -> void:
 
 func start_scene_1()-> void:
 	emit_signal("startScene", 2);
+	$Scene1.disabled = true;

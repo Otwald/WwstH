@@ -13,9 +13,21 @@ _global_script_classes=[ {
 "class": "Scene",
 "language": "GDScript",
 "path": "res://Scene.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://StateMachine/State.gd"
+}, {
+"base": "Node",
+"class": "StateMaschine",
+"language": "GDScript",
+"path": "res://StateMachine/SM.gd"
 } ]
 _global_script_class_icons={
-"Scene": ""
+"Scene": "",
+"State": "",
+"StateMaschine": ""
 }
 
 [application]
