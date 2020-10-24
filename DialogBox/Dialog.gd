@@ -15,9 +15,9 @@ onready var text_box : RichTextLabel = $DialogBox/Text;
 onready var choice_box : VBoxContainer = $Choice/Container;
 onready var speaker_box : RichTextLabel = $SpeakerBox/Text;
 onready var root : Node= get_node("/root/Root")
+onready var sm : Node = root.get_node("SM");
 
 func _ready():
-	var sm = root.get_node("SM");
 	sm.get_node("Skip").connect("OnSkip", self, "on_skip_flow");
 	connect("OnSkipped", sm.get_node("Skip"), "on_skipped");
 	connect("ToNext",sm.get_node("Idle"), "to_next" );
@@ -60,6 +60,7 @@ func build_choice(line : Dictionary):
 		init_choice.on_build(choice, counter, line.choice);
 		choice_box.add_child(init_choice);
 		counter += 1
+	sm._change_state("choice");
 
 func on_choice_found(choice : Dictionary):
 	choice["scene"] = _scene;
@@ -68,6 +69,7 @@ func on_choice_found(choice : Dictionary):
 	var to_kill = choice_box.get_children()
 	for node in to_kill:
 		node.queue_free()
+	sm._change_state('previous');
 
 func flow_text(delta):
 	var characters : int = text_box.visible_characters;

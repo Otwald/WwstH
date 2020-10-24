@@ -13,7 +13,8 @@ onready var root : Node = get_node("/root/Root")
 onready var states_map : Dictionary = {
 	'menu' : $Menu,
 	'idle' : $Idle,
-	'skip' : $Skip
+	'skip' : $Skip,
+	'choice' :$Choice
 }
 
 func _ready():
