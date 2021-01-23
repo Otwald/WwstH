@@ -115,6 +115,7 @@ func get_content()->Dictionary:
 				"speaker": "",
 				"mood": "",
 				"body": "",
+				"choice": 3,
 				"choices": [
 					{
 						"body": "It is because you are super intimidating.",
@@ -354,6 +355,7 @@ func get_content()->Dictionary:
 				"speaker": "",
 				"mood": "",
 				"body": "",
+				"choice": 3,
 				"choices": [
 					{
 						"body": "It’s the tradition of the town to have a magical girl!",
@@ -803,6 +805,7 @@ func get_content()->Dictionary:
 				"speaker": "",
 				"mood": "",
 				"body": "",
+				"choice": 3,
 				"choices": [
 					{
 						"body": "He is probably in love with you.",
