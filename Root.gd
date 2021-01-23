@@ -1,6 +1,6 @@
 extends Node
 
-var scenes : Array = ["","res://SceneTutorial/SceneTutorial.tscn","res://Scene1/Scene1.tscn", "res://Scene2/Scene2.tscn"]
+var scenes : Array = ["","res://Scenes/SceneTutorial/SceneTutorial.tscn","res://Scenes/Scene1/Scene1.tscn", "res://Scenes/Scene2/Scene2.tscn"]
 var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn", "Astraea" :"res://Character/Astraea/Astraea.tscn" }
 var save_log : Dictionary;
 

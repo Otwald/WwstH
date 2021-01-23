@@ -11,5 +11,6 @@ script = ExtResource( 2 )
 [node name="MapRoot" parent="." instance=ExtResource( 1 )]
 
 [node name="TitleScreen" parent="." instance=ExtResource( 3 )]
+visible = false
 
 [node name="SM" parent="." instance=ExtResource( 4 )]
