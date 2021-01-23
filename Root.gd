@@ -1,7 +1,7 @@
 extends Node
 
-var scenes : Array = ["","res://Scenes/SceneTutorial/SceneTutorial.tscn","res://Scenes/Scene1/Scene1.tscn", "res://Scenes/Scene2/Scene2.tscn"]
-var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn", "Astraea" :"res://Character/Astraea/Astraea.tscn" }
+var scenes : Array = ["res://Scenes/SceneTutorial/SceneTutorial.tscn","res://Scenes/Scene1/Scene1.tscn", "res://Scenes/Scene2/Scene2.tscn"]
+var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn", "Astraea" :"res://Character/Astraea/Astraea.tscn", "Mayor" : "res://Character/Mayor/Mayor.tscn" }
 var save_log : Dictionary;
 
 # Called when the node enters the scene tree for the first time.

@@ -43,3 +43,12 @@ margin_left = -541.921
 margin_top = 61.4026
 margin_right = -372.921
 margin_bottom = 196.403
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scene2" type="TextureButton" parent="."]
+margin_left = 869.697
+margin_top = 294.388
+margin_right = 976.697
+margin_bottom = 377.388
