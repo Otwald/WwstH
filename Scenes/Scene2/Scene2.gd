@@ -3,6 +3,7 @@ extends Scene
 var manager : Node2D;
 var mayor: Node2D
 
+
 func _ready():
 	var resp = build_scene(get_content());
 	var loaded_chars :Array = resp[0];

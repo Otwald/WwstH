@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tutorial_hover.png-df74e2263510a9474ca8648e841a0786.stex"
+path="res://.import/map.png-913c37df54f8e12b68606cff1ca6f989.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/tutorial_hover.png"
-dest_files=[ "res://.import/tutorial_hover.png-df74e2263510a9474ca8648e841a0786.stex" ]
+source_file="res://Asset/Map/map.png"
+dest_files=[ "res://.import/map.png-913c37df54f8e12b68606cff1ca6f989.stex" ]
 
 [params]
 

@@ -2,21 +2,18 @@
 
 signal startScene;
 
+onready var scenes : Array = [$Scene0, $Scene1, $Scene2]
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$SceneTut.connect("pressed", self, "start_scene_tut");
-	$Scene1.connect("pressed", self, "start_scene_1");
-	$Scene2.connect("pressed", self, "start_scene_2");
+	for scene in scenes:
+		scene.connect("pressed", self, "start_scene",[scene]);
+		scene.connect("mouse_entered", self, "scene_tooltip", [scene]);
+		scene.connect("mouse_exited", self, "scene_tooltip", [scene])
 
 
-func start_scene_tut() -> void:
-	emit_signal("startScene", 0);
-	$SceneTut.disabled = true;
+func start_scene(scene : Control) -> void:
+	emit_signal("startScene", scenes.bsearch(scene));
+	scene.disabled = true;
 
-func start_scene_1()-> void:
-	emit_signal("startScene", 1);
-	$Scene1.disabled = true;
-
-func start_scene_2()-> void:
-	emit_signal("startScene", 2);
-	$Scene2.disabled = true;
+func scene_tooltip(scene : Control)->void:
+	scene.get_node("Label").visible = !scene.get_node("Label").visible; 

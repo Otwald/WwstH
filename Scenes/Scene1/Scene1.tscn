@@ -12,8 +12,3 @@ __meta__ = {
 }
 
 [node name="Dialog" parent="." instance=ExtResource( 1 )]
-margin_left = 45.0
-margin_top = 25.0
-margin_right = 45.0
-margin_bottom = 25.0
-rect_scale = Vector2( 0.9, 0.9 )
