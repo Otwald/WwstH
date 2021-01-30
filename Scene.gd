@@ -2,6 +2,7 @@ extends Control
 class_name Scene
 
 signal OnLoaded
+signal EndScene
 
 var count : int = 1;
 var progress :bool = false
@@ -14,6 +15,7 @@ onready var sm : Node = root.get_node("SM");
 
 func _ready():
 	connect("OnLoaded", sm.get_node("MainMenu"), "on_signal");
+	connect("EndScene", root, "trigger_end");
 	sm.get_node("Idle").connect("OnNext", self, "on_idle_input");
 
 func _process(_delta):
@@ -28,28 +30,29 @@ func on_idle_input():
 func play_scene():
 	progress = false
 	if not content.has(str(count)):
-		on_say("Thanks for Playing this Prototype, and stay tuned for new updates", "", "")
-		root.find_node("TitleScreen").on_end()
-		queue_free()
+		emit_signal("EndScene");
+		queue_free();
 		return
-	var line = content[str(count)];
+	get_line_content(content[str(count)])
+	count += 1
+	print(count)
+
+#also checks if the dictionary has the keys choice, condition and jump
+func get_line_content(line: Dictionary)-> void:
+	on_say(line.body, line.speaker,(line.mood if line.has("mood") else ""));
+	if line.has("choices"):
+		$Dialog.build_choice(line)
+		return
 	if line.has('condition'):
 		var condi : Dictionary = line.condition;
 		var check = root.save_log[condi.scene];
+		line.jump = condi["false"]
 		if check[condi.props.key] == condi.props.value:
-			count = condi["true"]
-		else:
-			count = condi["false"]
-	if line.is_line:
-		on_say(line.body, line.speaker, line.mood);
-		if line.has('jump'):
-			count = line.jump -1
-	else:
-		$Dialog.build_choice(line)
-	print(count)
-	count += 1;
+			line.jump = condi["true"]
+	if line.has('jump'):
+		count = line.jump -1
 
-func on_say(body : String, speaker : String, mood : String) ->void:
+func on_say(body : String, speaker : String, mood : String = "") ->void:
 	$Dialog.set_speaker(speaker)
 	if speaker != "":
 		var chara = character[speaker]

@@ -130,7 +130,13 @@ func get_content()->Dictionary:
 			"speaker": "",
 			"mood": "",
 			"body": "Good luck! Will you be the one to save the hero?\n"
-		  }
+		  },
+		  "19": {
+			"is_line": true,
+			"speaker": "",
+			"mood": "",
+			"body": "This so far the End of the Tutorial,\n The other 2 Scenes are out of order but we still wanted to present them to you\n So please have fun!"
 		}
 	  }
+	}
 	  

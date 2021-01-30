@@ -1,5 +1,6 @@
 extends Node
 
+var play_counter : int = 0;
 var scenes : Array = ["res://Scenes/SceneTutorial/SceneTutorial.tscn","res://Scenes/Scene1/Scene1.tscn", "res://Scenes/Scene2/Scene2.tscn"]
 var figures : Dictionary = { "Manager" : "res://Character/Manager/Manager.tscn", "Merax" : "res://Character/Merax/Merax.tscn", "Astraea" :"res://Character/Astraea/Astraea.tscn", "Mayor" : "res://Character/Mayor/Mayor.tscn" }
 var save_log : Dictionary;
@@ -22,3 +23,8 @@ func on_save_scene_props(choice : Dictionary):
 		save_log[choice.scene][choice.character] = save_log[choice.scene][choice.character] + choice[choice.character]
 	save_log[choice.scene][choice.choice] = choice.own_numb
 	print(save_log);
+
+func trigger_end():
+	play_counter += 1;
+	if play_counter == 3:
+		$TitleScreen.on_end()
