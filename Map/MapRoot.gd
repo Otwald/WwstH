@@ -13,6 +13,7 @@ func _ready():
 
 func start_scene(scene : Control) -> void:
 	emit_signal("startScene", scenes.bsearch(scene));
+	scene.get_node("Label").text = "";
 	scene.disabled = true;
 
 func scene_tooltip(scene : Control)->void:

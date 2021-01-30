@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Asset/Map/map.png" type="Texture" id=1]
 [ext_resource path="res://Asset/Map/Scene2.png" type="Texture" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://Asset/Map/tutorial_hover.png" type="Texture" id=6]
 [ext_resource path="res://Asset/Map/Scene1.png" type="Texture" id=7]
 [ext_resource path="res://Asset/Map/Scene1_hover.png" type="Texture" id=8]
+[ext_resource path="res://Asset/Map/Scene1_disabled.png" type="Texture" id=9]
+[ext_resource path="res://Asset/Map/tutorial_disabled.png" type="Texture" id=10]
+[ext_resource path="res://Asset/Map/Scene2_disabled.png" type="Texture" id=11]
 
 [node name="MapRoot" type="Control"]
 margin_right = 1024.0
@@ -28,12 +31,13 @@ anchor_left = 0.125
 anchor_top = 0.247
 anchor_right = 0.125
 anchor_bottom = 0.247
-margin_left = 562.0
-margin_top = -57.2
-margin_right = 695.0
-margin_bottom = 45.8
+margin_left = 561.333
+margin_top = -57.5337
+margin_right = 694.333
+margin_bottom = 45.4663
 texture_normal = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
+texture_disabled = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -56,12 +60,13 @@ anchor_left = 0.624
 anchor_top = 0.365
 anchor_right = 0.624
 anchor_bottom = 0.365
-margin_left = -38.976
-margin_top = 199.0
-margin_right = 92.024
-margin_bottom = 302.0
+margin_left = -37.8522
+margin_top = 199.375
+margin_right = 93.1478
+margin_bottom = 302.375
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
+texture_disabled = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -80,12 +85,13 @@ __meta__ = {
 }
 
 [node name="Scene2" type="TextureButton" parent="."]
-margin_left = 110.371
-margin_top = 287.622
-margin_right = 268.371
-margin_bottom = 394.622
+margin_left = 110.056
+margin_top = 287.307
+margin_right = 268.056
+margin_bottom = 394.307
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 4 )
+texture_disabled = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="Scene2"]
 visible = false
