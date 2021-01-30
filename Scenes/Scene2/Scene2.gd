@@ -19,7 +19,7 @@ func get_content()->Dictionary:
 	return {
 		"scene": 2,
 		"bg": "res://Asset/Scenes/BG_MayorOffice.png",
-		"character": ["Manager", "Mayor"],
+		"character": [ {"name" : "Manager"}, {"name" : "Mayor" , "position" : Vector2(480,260)}],
 		"content": {
 			"1": {
 				"speaker": "",

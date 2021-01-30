@@ -69,8 +69,9 @@ func init_chars(charas : Array) -> Array:
 	var out : Array = []
 	var all_character : Dictionary = get_node("/root/Root").figures
 	for chara in charas:
-		var ress_scene = load(all_character[chara]);
-		var init_scene = ress_scene.instance();
+		var ress_scene = load(all_character[chara.name]);
+		var init_scene : Node2D = ress_scene.instance();
+		init_scene.position = chara.position if chara.has("position") else Vector2(0,0);
 		out.push_back(init_scene)
 	return out;
 

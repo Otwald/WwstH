@@ -28,7 +28,8 @@ func build_scene(bg : Texture, charas : Array, scene : int) ->void:
 	_scene = scene;
 	var i = 0
 	while i < charas.size():
-		charas[i].transform = spawns[i];
+		if charas[i].position == Vector2(0,0):
+			charas[i].transform = spawns[i];
 		add_child(charas[i]);
 		move_child(charas[i], 1)
 		charas[i].visible = false;

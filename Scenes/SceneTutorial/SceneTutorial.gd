@@ -21,7 +21,7 @@ func get_content()->Dictionary:
 	return {
 		"scene": 0,
 		"bg": "res://Asset/Scenes/BG_GraveHill.png",
-		"character": ["Manager", "Astraea"],
+		"character": [{"name" : "Manager"}, {"name" :"Astraea"}],
 		"content": {
 		  "1": {
 			"is_line": true,
