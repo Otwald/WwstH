@@ -22,7 +22,6 @@ func on_save_scene_props(choice : Dictionary):
 	else:
 		save_log[choice.scene][choice.character] = save_log[choice.scene][choice.character] + choice[choice.character]
 	save_log[choice.scene][choice.choice] = choice.own_numb
-	print(save_log);
 
 func trigger_end():
 	play_counter += 1;

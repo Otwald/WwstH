@@ -35,7 +35,6 @@ func play_scene():
 		return
 	get_line_content(content[str(count)])
 	count += 1
-	print(count)
 
 #also checks if the dictionary has the keys choice, condition and jump
 func get_line_content(line: Dictionary)-> void:
@@ -64,7 +63,6 @@ func build_scene(scene_content :Dictionary)-> Array:
 	var loaded : Array = init_chars(scene_content.character);
 	$Dialog.build_scene(texture, loaded, scene_content.scene);
 	emit_signal("OnLoaded")
-	print("Loaded Scene");
 	return [loaded, scene_content];
 
 func init_chars(charas : Array) -> Array:
