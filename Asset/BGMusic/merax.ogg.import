@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/merax.ogg-c60ba39e4d82d25ea2ebdfe6098e276d.oggstr"
+
+[deps]
+
+source_file="res://Asset/BGMusic/merax.ogg"
+dest_files=[ "res://.import/merax.ogg-c60ba39e4d82d25ea2ebdfe6098e276d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

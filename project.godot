@@ -42,6 +42,10 @@ config/name="Magic Jam"
 run/main_scene="res://Root.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+MusicController="*res://MusicController/MusicController.tscn"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

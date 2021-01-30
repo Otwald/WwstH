@@ -62,7 +62,8 @@ func build_scene(scene_content :Dictionary)-> Array:
 	var texture : Texture = load(scene_content.bg);
 	var loaded : Array = init_chars(scene_content.character);
 	$Dialog.build_scene(texture, loaded, scene_content.scene);
-	emit_signal("OnLoaded")
+	emit_signal("OnLoaded");
+	MusicController.play(scene_content.bg_music);
 	return [loaded, scene_content];
 
 func init_chars(charas : Array) -> Array:

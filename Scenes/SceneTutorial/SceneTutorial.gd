@@ -22,6 +22,7 @@ func get_content()->Dictionary:
 		"scene": 0,
 		"bg": "res://Asset/Scenes/BG_GraveHill.png",
 		"character": [{"name" : "Manager"}, {"name" :"Astraea"}],
+		"bg_music" : "res://Asset/BGMusic/tutorial.ogg",
 		"content": {
 		  "1": {
 			"is_line": true,

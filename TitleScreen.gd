@@ -10,6 +10,7 @@ extends Control
 func _ready():
 	$Title/Label.text = "Who will save the hero?"
 	$Menu/Start.connect("pressed", self, "on_start")
+	MusicController.play("res://Asset/BGMusic/tutorial.ogg")
 
 func on_start():
 	visible = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mayor.ogg-41dbeb509ed6027ad238c7098cad5072.oggstr"
+
+[deps]
+
+source_file="res://Asset/BGMusic/mayor.ogg"
+dest_files=[ "res://.import/mayor.ogg-41dbeb509ed6027ad238c7098cad5072.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

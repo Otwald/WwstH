@@ -22,6 +22,7 @@ func get_content()->Dictionary:
 		"scene": 1,
 		"bg": "res://Asset/Scenes/scene1.png",
 		"character": [{"name" : "Manager"}, {"name": "Merax"}],
+		"bg_music" : "res://Asset/BGMusic/merax.ogg",
 		"content": {
 		  "1": {
 			"speaker": "",
